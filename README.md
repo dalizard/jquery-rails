@@ -8,7 +8,7 @@ The gem will also hook into the Rails configuration process, removing Prototype 
 
 In your Gemfile, add this line:
 
-    gem "jquery-rails"
+    gem "jquery-rails", "~> 0.2"
 
 Then, run `bundle install`. To invoke the generator, run:
 
@@ -16,6 +16,6 @@ Then, run `bundle install`. To invoke the generator, run:
 
 You're done! Don't forget to output `csrf_meta_tag` somewhere inside your `<head>` tag in your layout!
 
-### Edge rails
+### Rails 3.1
 
-If you're using edge Rails, everything should just work starting with version 0.2.2. If it's not working, try running `bundle update jquery-rails`, or change your Gemfile to read `gem "jquery-rails", "~>0.2"`.
+If you're using Rails 3.1, you need jquery-rails 1.0 or newer. You can specify that by changing your Gemfile line to `gem "jquery-rails", "~> 1.0"`.
